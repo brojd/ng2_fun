@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'; // eslint-disable-line no-unused-vars
+import { Component, Input } from '@angular/core'; // eslint-disable-line no-unused-vars
 import template from './fu-edit-form.template.html';
 
 @Component({
@@ -6,6 +6,8 @@ import template from './fu-edit-form.template.html';
     template: template
 })
 export class FuEditFormComponent {
+
+    @Input() formID = 1;
 
     constructor() {}
 }

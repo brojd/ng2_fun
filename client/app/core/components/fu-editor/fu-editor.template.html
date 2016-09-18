@@ -1,4 +1,4 @@
 <div>fu-editor</div>
-<div><fu-trainers>dd</fu-trainers></div>
-<div><fu-classes></fu-classes></div>
-<div><fu-edit-form></fu-edit-form></div>
+<div><fu-trainers (onChosen) = "setFormID($event)"></fu-trainers></div>
+<div><fu-classes (onChosen) = "setFormID($event)"></fu-classes></div>
+<h2><div><fu-edit-form [formID]="currentForm"></fu-edit-form></div></h2>

@@ -1,1 +1,6 @@
-<div>edit-form</div>
+<div [ngSwitch]="formID">
+    <div *ngSwitchCase=1>Edit Trainers</div>
+    <div *ngSwitchCase=2>Add Trainers</div>
+    <div *ngSwitchCase=3>Edit Classes</div>
+    <div *ngSwitchCase=4>Add Classes</div>
+</div>

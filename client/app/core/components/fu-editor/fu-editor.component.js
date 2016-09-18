@@ -7,5 +7,10 @@ import template from './fu-editor.template.html';
 })
 export class FuEditorComponent {
 
-    constructor() {}
+    constructor() {
+        this.currentForm = 1;
+    }
+    setFormID(formID) {
+        this.currentForm = formID;
+    }
 }

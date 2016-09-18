@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'; // eslint-disable-line no-unused-vars
+import { Component, EventEmitter, Output } from '@angular/core'; // eslint-disable-line no-unused-vars
 import template from './fu-classes.template.html';
 
 @Component({
@@ -7,5 +7,11 @@ import template from './fu-classes.template.html';
 })
 export class FuClassesComponent {
 
+    @Output() onChosen = new EventEmitter();
+
     constructor() {}
+
+    setFormID(classesID) {
+        this.onChosen.emit(classesID);
+    }
 }
