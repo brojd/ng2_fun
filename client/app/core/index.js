@@ -8,8 +8,9 @@ import { FuEditorComponent } from './components/fu-editor/fu-editor.component';
 import { FuTrainersComponent } from './components/fu-trainers/fu-trainers.component';
 import { FuClassesComponent } from './components/fu-classes/fu-classes.component';
 import { FuEditFormComponent } from './components/fu-edit-form/fu-edit-form.component';
+import { FuSchedulerComponent } from './components/fu-scheduler/fu-scheduler.component';
 
 export { AppComponent };
 export const CORE_PROVIDERS = [LoggedInGuard, LoggedOutGuard];
 export const CORE_DECLARATIONS = [AboutComponent, MenuComponent, AppComponent, FuEditorComponent, FuTrainersComponent,
-    FuClassesComponent, FuEditFormComponent];
+    FuClassesComponent, FuEditFormComponent, FuSchedulerComponent];
